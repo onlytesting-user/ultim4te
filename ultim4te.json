@@ -23,16 +23,6 @@
             "type": "git"
           },
           {
-            "foreground": "#8993BE", // #8993BE ou #8892BF ou #777BB3 ou #AEB2D5
-            "properties": {
-              "fetch_version": true,
-              "fetch_composer": true
-            },
-            "style": "plain",
-            "template": "<#ffffff>via</> \ue608 {{ .Full }} ", // {{ if .Composer }} (Composer: {{ .Composer.Version }}){{ end }} ",
-            "type": "php"
-          },
-          {
             "foreground": "#84ffff",
             "properties": {
               "fetch_version": true
@@ -50,6 +40,15 @@
             "style": "plain",
             "template": "<#ffffff>via</> \ued0d {{ .Full }} ",
             "type": "node"
+          },
+          {
+            "foreground": "#F09456",
+            "properties": {
+              "fetch_version": true
+            },
+            "style": "plain",
+            "template": "<#ffffff>via</> \ue235 {{ .Full }} ",
+            "type": "python"
           }
         ],
         "type": "prompt"
