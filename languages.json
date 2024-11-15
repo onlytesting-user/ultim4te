@@ -1,0 +1,57 @@
+[
+  {
+    "foreground": "#84ffff",
+    "properties": {
+      "fetch_version": true
+    },
+    "style": "plain",
+    "template": "<#ffffff>via</> \ue7ba {{ .Full }}",
+    "type": "react"
+  },
+  {
+    "foreground": "#8993BE",
+    "properties": {
+      "fetch_composer": true,
+      "fetch_version": true
+    },
+    "style": "plain",
+    "template": "<#ffffff>via</> \ue608 {{ .Full }} ",
+    "type": "php"
+  },
+  {
+    "foreground": "#F09456",
+    "properties": {
+      "fetch_version": true
+    },
+    "style": "plain",
+    "template": "<#ffffff>via</> \ue235 {{ .Full }} ",
+    "type": "python"
+  },
+  {
+    "foreground": "#29BEB0",
+    "properties": {
+      "fetch_version": true
+    },
+    "style": "plain",
+    "template": "<#ffffff>via</> \ue627 {{ .Full }} ",
+    "type": "go"
+  },
+  {
+    "foreground": "#CC342D",
+    "properties": {
+      "fetch_version": true
+    },
+    "style": "plain",
+    "template": "<#ffffff>via</> \ue739 {{ .Full }} ",
+    "type": "ruby"
+  },
+  {
+    "foreground": "#178600",
+    "properties": {
+      "fetch_version": true
+    },
+    "style": "plain",
+    "template": "<#ffffff>via</> \ue648 {{ .Full }} ",
+    "type": "csharp"
+  }
+]

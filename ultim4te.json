@@ -23,25 +23,6 @@
             "type": "git"
           },
           {
-            "foreground": "#84ffff",
-            "properties": {
-              "fetch_version": true
-            },
-            "style": "plain",
-            "template": "<#ffffff>via</> \ue7ba {{ .Full }}",
-            "type": "react"
-          },
-          {
-            "foreground": "#8993BE",
-            "properties": {
-              "fetch_composer": true,
-              "fetch_version": true
-            },
-            "style": "plain",
-            "template": "<#ffffff>via</> \ue608 {{ .Full }} ",
-            "type": "php"
-          },
-          {
             "foreground": "#6CC24A",
             "properties": {
               "fetch_package_manager": true,
@@ -50,15 +31,6 @@
             "style": "plain",
             "template": "<#ffffff>via</> \ued0d {{ .Full }} ",
             "type": "node"
-          },
-          {
-            "foreground": "#F09456",
-            "properties": {
-              "fetch_version": true
-            },
-            "style": "plain",
-            "template": "<#ffffff>via</> \ue235 {{ .Full }} ",
-            "type": "python"
           }
         ],
         "type": "prompt"
