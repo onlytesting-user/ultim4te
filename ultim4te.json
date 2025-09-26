@@ -1,71 +1,68 @@
 {
-    "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
-    "blocks": [
-      {
-        "alignment": "left",
-        "segments": [
-          {
-            "foreground": "#ee5959",
-            "properties": {
-              "style": "folder"
-            },
-            "style": "plain",
-            "template": "{{ .Path }}/ ",
-            "type": "path"
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "properties": {
+            "style": "folder"
           },
-          {
-            "foreground": "#f967bf",
-            "properties": {
-              "fetch_status": true
-            },
-            "style": "plain",
-            "template": "<#ffffff>on</> {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }} ",
-            "type": "git"
+          "template": " \ueaf7 {{ .Path }}/ ",
+          "foreground": "#50C878",
+          "type": "path",
+          "style": "plain"
+        },
+        {
+          "properties": {
+            "fetch_status": true
           },
-          {
-            "foreground": "#6CC24A",
-            "properties": {
-              "fetch_package_manager": true,
-              "fetch_version": true
-            },
-            "style": "plain",
-            "template": "<#ffffff>via</> \ued0d {{ .Full }} ",
-            "type": "node"
-          }
-        ],
-        "type": "prompt"
-      },
-      {
-        "alignment": "right",
-        "segments": [
-          {
-            "foreground": "#ffffff",
-            "leading_diamond": "\ue641",
-            "properties": {
-              "style": "roundrock",
-              "threshold": 0
-            },
-            "style": "diamond",
-            "template": " {{ .FormattedMs }} ",
-            "type": "executiontime"
-          }
-        ],
-        "type": "prompt"
-      },
-      {
-        "alignment": "left",
-        "newline": true,
-        "segments": [
-          {
-            "foreground": "#fff200",
-            "style": "plain",
-            "template": "\u2b9e ",
-            "type": "text"
-          }
-        ],
-        "type": "prompt"
-      }
-    ],
-    "final_space": true,
-    "version": 2
-  }
+          "template": "<#ffffff>on</> {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }} ",
+          "foreground": "#FF69B4",
+          "type": "git",
+          "style": "plain"
+        },
+        {
+          "properties": {
+            "fetch_version": true
+          },
+          "template": "<#ffffff>via</> \ue627 {{ .Full }} ",
+          "foreground": "#00ADD8",
+          "type": "go",
+          "style": "plain"
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "right",
+      "segments": [
+        {
+          "properties": {
+            "style": "roundrock",
+            "threshold": 0
+          },
+          "template": " \ue641 {{ .FormattedMs }} ",
+          "foreground": "#ffffff",
+          "type": "executiontime",
+          "style": "diamond"
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "template": "\u279c ",
+          "foreground": "#f1184c",
+          "type": "text",
+          "style": "plain"
+        }
+      ],
+      "newline": true
+    }
+  ],
+  "version": 3,
+  "final_space": true
+}
