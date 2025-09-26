@@ -35,22 +35,6 @@
     },
     {
       "type": "prompt",
-      "alignment": "right",
-      "segments": [
-        {
-          "properties": {
-            "style": "roundrock",
-            "threshold": 0
-          },
-          "template": " \ue641 {{ .FormattedMs }} ",
-          "foreground": "#ffffff",
-          "type": "executiontime",
-          "style": "diamond"
-        }
-      ]
-    },
-    {
-      "type": "prompt",
       "alignment": "left",
       "segments": [
         {
